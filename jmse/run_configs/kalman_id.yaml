@@ -1,0 +1,8 @@
+# Local-level Kalman filter classical baseline, in-distribution.
+# q, R estimated from training first differences; flat (level-hold) forecast (CPU).
+name: kalman_id
+model: kalman
+regime: id
+hold_hs: null
+hold_ton: null
+seed: 0

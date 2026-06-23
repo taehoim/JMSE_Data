@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Heavy, regenerable run artifacts (the released CSVs + figures under results/ ARE tracked;
+# per-window predictions, scores, scalers, and checkpoints are reproducible from seeded runs)
+results/**/preds/
+results/**/*.npz
+results/**/checkpoints/
+results/**/*.pt
+*_smoke/

@@ -1,0 +1,16 @@
+# Temporal Convolutional Network, in-distribution.
+# layers = number of residual blocks (dilations 1,2,4,8); receptive field >= lookback(20).
+name: tcn_id
+model: tcn
+regime: id
+hold_hs: null
+hold_ton: null
+
+hidden: 64
+layers: 4
+dropout: 0.1
+lr: 0.001
+batch_size: 128
+epochs: 100
+patience: 12
+seed: 0

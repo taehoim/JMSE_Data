@@ -1,0 +1,22 @@
+# Uncertainty quantification run (C1): LSTM backbone shared by all three UQ methods.
+name: uq_id
+model: lstm
+regime: id
+hold_hs: null
+hold_ton: null
+
+# backbone hyperparameters (match the reference LSTM)
+hidden: 128
+layers: 2
+dropout: 0.3
+lr: 0.001
+batch_size: 128
+epochs: 100
+patience: 12
+seed: 0
+
+# UQ settings
+mc_passes: 30           # MC-Dropout stochastic forward passes (T)
+ensemble_seeds: [0, 1, 2, 3, 4]   # Deep Ensemble members (M=5)
+taus: [0.05, 0.5, 0.95]           # quantile-regression levels
+coverage: 0.90          # nominal interval for PICP/MPIW

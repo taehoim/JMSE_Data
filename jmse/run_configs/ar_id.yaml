@@ -1,0 +1,9 @@
+# Autoregressive AR(8) classical baseline, in-distribution.
+# Closed-form OLS fit on target history; recursive multi-horizon forecast (CPU).
+name: ar_id
+model: ar
+regime: id
+hold_hs: null
+hold_ton: null
+order: 8
+seed: 0

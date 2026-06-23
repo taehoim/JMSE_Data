@@ -1,0 +1,15 @@
+# GRU forecaster, in-distribution. Same capacity as the reference LSTM.
+name: gru_id
+model: gru
+regime: id
+hold_hs: null
+hold_ton: null
+
+hidden: 128
+layers: 2
+dropout: 0.3
+lr: 0.001
+batch_size: 128
+epochs: 100
+patience: 12
+seed: 0

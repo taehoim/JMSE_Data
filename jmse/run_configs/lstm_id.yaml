@@ -1,0 +1,15 @@
+# Reference LSTM, in-distribution (reproduces the original paper architecture).
+name: lstm_id
+model: lstm
+regime: id          # id | loho | lovo
+hold_hs: null
+hold_ton: null
+
+hidden: 128
+layers: 2
+dropout: 0.3
+lr: 0.001
+batch_size: 128
+epochs: 100
+patience: 12
+seed: 0

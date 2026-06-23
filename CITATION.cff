@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite both the article and this archived release."
+title: "Uncertainty-Aware Short-Horizon Warning of Large-Inclination Exceedance in Small Fishing Vessels: code and data"
+type: software
+version: 1.0.0
+date-released: 2026-06-06
+license: MIT
+authors:
+  - family-names: Joo
+    given-names: Hyung-Tak
+    affiliation: "Hoseo University"
+  - family-names: Song
+    given-names: Byoungchul
+    affiliation: "Korea Electronics Technology Institute"
+  - family-names: Park
+    given-names: Kyoungwon
+    affiliation: "Korea Electronics Technology Institute"
+  - family-names: Kwon
+    given-names: Kiwon
+    affiliation: "Korea Electronics Technology Institute"
+  - family-names: Im
+    given-names: Tae-Ho
+    affiliation: "Hoseo University"
+    email: taeho.im@gmail.com
+preferred-citation:
+  type: article
+  title: "Uncertainty-Aware Short-Horizon Warning of Large-Inclination Exceedance in Small Fishing Vessels: A Simulation-Based Multi-Model Benchmark"
+  authors:
+    - family-names: Joo
+      given-names: Hyung-Tak
+    - family-names: Song
+      given-names: Byoungchul
+    - family-names: Park
+      given-names: Kyoungwon
+    - family-names: Kwon
+      given-names: Kiwon
+    - family-names: Im
+      given-names: Tae-Ho
+  journal: "Journal of Marine Science and Engineering"
+  publisher: "MDPI"
+  year: 2026
+# After minting the Zenodo DOI, add it here and in paper/main.tex (replace 10.5281/zenodo.XXXXXXX):
+# doi: 10.5281/zenodo.XXXXXXX

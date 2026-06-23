@@ -1,0 +1,13 @@
+# Exact versions used to produce the committed results and manuscript figures.
+# Install the loose spec (requirements.txt) for flexibility, or pin these for bit-reproducibility.
+# GPU build: PyTorch 2.6.0 + CUDA 12.4 (cu124 wheels); CPU-only also works (slower training).
+torch==2.6.0
+numpy==1.26.4
+pandas==2.3.3
+scikit-learn==1.8.0
+scipy==1.13.1
+matplotlib==3.10.8
+pyyaml==6.0.2
+pytest==8.3.4
+pyarrow==18.1.0
+statsmodels==0.14.4

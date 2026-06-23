@@ -1,0 +1,15 @@
+# Lightweight Transformer encoder, in-distribution. nhead=4 (auto-reduced if needed).
+name: transformer_id
+model: transformer
+regime: id
+hold_hs: null
+hold_ton: null
+
+hidden: 64
+layers: 2
+dropout: 0.1
+lr: 0.0005
+batch_size: 128
+epochs: 100
+patience: 12
+seed: 0
