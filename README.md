@@ -75,5 +75,5 @@ docs/             MATLAB_REGEN_SPEC.md (simulation recipe)
 
 ## Citation & license
 
-If you use this code or data, please cite the article and this archive (see
+If you use this code or data, please cite the article and this repository (see
 [`CITATION.cff`](CITATION.cff)). Released under the MIT License ([`LICENSE`](LICENSE)).

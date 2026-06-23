@@ -1,10 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite both the article and this archived release."
+message: "If you use this software or data, please cite the article (see preferred-citation) and this repository."
 title: "Uncertainty-Aware Short-Horizon Warning of Large-Inclination Exceedance in Small Fishing Vessels: code and data"
 type: software
 version: 1.0.0
 date-released: 2026-06-06
 license: MIT
+repository-code: "https://github.com/taehoim/JMSE_Data"
+url: "https://github.com/taehoim/JMSE_Data"
 authors:
   - family-names: Joo
     given-names: Hyung-Tak
@@ -39,5 +41,3 @@ preferred-citation:
   journal: "Journal of Marine Science and Engineering"
   publisher: "MDPI"
   year: 2026
-# After minting the Zenodo DOI, add it here and in paper/main.tex (replace 10.5281/zenodo.XXXXXXX):
-# doi: 10.5281/zenodo.XXXXXXX

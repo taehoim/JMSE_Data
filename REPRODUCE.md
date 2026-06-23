@@ -31,12 +31,11 @@ you can **skip to Stage 3** to re-derive the post-hoc statistics, or run
 regenerate the predictions (and the raw data) from scratch.
 
 > **What is and is not in this git repository.** Code, scripts, configs, the
-> regeneration `.m` files, the small per-seed result CSVs, and the figure PNGs
-> are committed. The bulky regenerable artifacts are **not**: the raw 6-DOF CSVs
-> under `00_Ref/`, the processed `data_processed/*.parquet`, per-window
-> predictions (`results/**/preds/`, `results/**/*.npz`), and model checkpoints
-> (`results/**/*.pt`). These are reproducible from the steps below and are also
-> archived on Zenodo (DOI `<ZENODO_DOI>`). See [Obtaining the large artifacts](#obtaining-the-large-artifacts).
+> regeneration `.m` files, the **dataset** (raw 6-DOF CSVs under `00_Ref/` and the
+> curated `data_processed/curated.parquet`), the small per-seed result CSVs, and the
+> figure PNGs are committed. Not committed (large, and regenerable from Stage 2):
+> per-window predictions (`results/**/preds/`, `results/**/*.npz`) and model
+> checkpoints (`results/**/*.pt`). See [Obtaining the large artifacts](#obtaining-the-large-artifacts).
 
 ---
 
@@ -230,15 +229,11 @@ make paper         # pdflatex -> bibtex -> pdflatex x2  (see paper/README.md for
 
 ## Obtaining the large artifacts
 
-The raw 6-DOF CSVs, the processed parquet, per-window predictions (`*.npz`,
-`preds/`), and model checkpoints (`*.pt`) are **not** in git (they are large and
-fully regenerable). Two ways to get them:
-
-1. **Regenerate** — run Stage 1 (raw + parquet) and Stage 2 (predictions /
-   checkpoints) as above.
-2. **Download** the archived snapshot from Zenodo (DOI `<ZENODO_DOI>`) and unpack
-   it into the repo root so that `data_processed/` and `results/**/` are
-   populated; then run only Stage 3 (`make analysis`).
+The **dataset is included** in this repository (the raw 6-DOF CSVs under `00_Ref/`
+and `data_processed/curated.parquet`). Only the per-window predictions (`*.npz`,
+`preds/`) and the model checkpoints (`*.pt`) are **not** in git — they are large and
+fully regenerable. To produce them, run Stage 2 (`bash scripts/run_phase3.sh`);
+Stage 3 (`make analysis`) then re-derives every post-hoc table and figure.
 
 The committed small result CSVs and figure PNGs are sufficient to re-derive
 every post-hoc number and to rebuild the manuscript without the large artifacts.
