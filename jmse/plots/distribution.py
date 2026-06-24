@@ -38,7 +38,7 @@ def plot_xacc_distribution() -> Path:
     axes[1].set_xticks(np.arange(len(tons)) + width)
     axes[1].set_xticklabels([f"{t} t" for t in tons])
     axes[1].set_ylabel(r"Exceedance rate, $\theta_{\mathrm{TIA}}>15^\circ$ (%)")
-    axes[1].set_title("(b) Danger-threshold exceedance")
+    axes[1].set_title("(b) Operational-threshold exceedance")
     axes[1].legend()
     add_grid(axes[1], axis="y")
 
