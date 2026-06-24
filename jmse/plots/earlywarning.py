@@ -42,7 +42,7 @@ def plot_F7(out_dir: Path, method: str = "") -> Path:
         axes[1].plot(rec, prec, label=f"{name} (AP={roc.pr_auc(lab, score):.3f})")
     axes[0].plot([0, 1], [0, 1], ls="--", lw=0.8, color="grey")
     axes[0].set_xlabel("False-alarm rate"); axes[0].set_ylabel("Detection rate")
-    axes[0].set_title(f"(a) ROC — danger > {_HEAD_DEG} deg"); axes[0].legend(fontsize=8)
+    axes[0].set_title(rf"(a) ROC — $\theta_{{\mathrm{{TIA}}}}>{int(_HEAD_DEG)}^\circ$"); axes[0].legend(fontsize=8)
     add_grid(axes[0])
     axes[1].axhline(lab.mean(), ls="--", lw=0.8, color="grey", label="prevalence")
     axes[1].set_xlabel("Recall"); axes[1].set_ylabel("Precision")
@@ -69,7 +69,7 @@ def plot_F8(out_dir: Path) -> Path:
                      label="probabilistic" if name == "prob" else "point")
     axes[0].axhline(0.8, ls="--", lw=0.9, color="red", label="AUC = 0.8")
     axes[0].set_xlabel("Forecast horizon (s)"); axes[0].set_ylabel("ROC-AUC")
-    axes[0].set_title(f"(a) Effective horizon — danger > {_HEAD_DEG} deg")
+    axes[0].set_title(rf"(a) Effective horizon — $\theta_{{\mathrm{{TIA}}}}>{int(_HEAD_DEG)}^\circ$")
     axes[0].legend(fontsize=8)
     add_grid(axes[0])
 
